@@ -1,9 +1,18 @@
 package com.example.movil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -11,24 +20,43 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-	}
+		
+		//array con el menu (lista)
+		List menu = new ArrayList<Menu>();
+		
+		menu.add("Entrada"); //0
+		menu.add("Plato de Fondo"); //1
+		menu.add("Postre"); //2
+		menu.add("Bebestible"); //3
+		menu.add("Menu del dia"); //4
+		menu.add("Administrador"); //5
+		
+		
+		final ListView listview=(ListView)findViewById(R.id.listaNotas);
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, menu);
+		listview.setAdapter(adapter);
+		
+		//onclick por cada fila
+		listview.setOnItemClickListener(new OnItemClickListener() {	   
+	    	   @Override
+		       public void onItemClick(AdapterView<?> parent, View view, int position, long id){        
+	    				//--Ir a vista : Opciones--//
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+	    		   		
+	    		   
+	    		   		//Notas item=NotaList2.get(position);
+	    		   		
+	    		   		//ENTRADA
+	    		   		if(position == 0){
+	    		   
+		    				Intent ir_a = new Intent (MainActivity.this, EntradaActivity.class);		        			
+		    				startActivity(ir_a);
+	    		   		}
+	    	   }
+	    		 
+		        });
+			
 		}
-		return super.onOptionsItemSelected(item);
-	}
+		
+		
 }
