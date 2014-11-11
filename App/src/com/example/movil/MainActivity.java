@@ -1,4 +1,4 @@
-package com.movil;
+package com.example.movil;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
