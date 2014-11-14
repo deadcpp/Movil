@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
 		menu.add("Administrador"); //5
 		
 		
-		final ListView listview=(ListView)findViewById(R.id.listaNotas);
+		ListView listview=(ListView)findViewById(R.id.listaNotas);
 		ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, menu);
 		listview.setAdapter(adapter);
 		
