@@ -52,6 +52,13 @@ public class MainActivity extends ActionBarActivity {
 		    				Intent ir_a = new Intent (MainActivity.this, EntradaActivity.class);		        			
 		    				startActivity(ir_a);
 	    		   		}
+	    		   		
+	    		   		//administrador
+	    		   		if(position == 5){
+	    		    		   
+		    				Intent ir_a = new Intent (MainActivity.this, Login.class);		        			
+		    				startActivity(ir_a);
+	    		   		}
 	    	   }
 	    		 
 		        });
