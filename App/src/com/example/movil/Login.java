@@ -43,7 +43,7 @@ public class Login extends Activity {
         setContentView(R.layout.login);
         post=new Httppostaux();
         
-        user= (EditText) findViewById(R.id.editText1);
+        user= (EditText) findViewById(R.id.number);
         pass= (EditText) findViewById(R.id.editText2);
         blogin= (Button) findViewById(R.id.button2);
                     

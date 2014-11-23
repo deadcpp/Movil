@@ -8,5 +8,9 @@
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="title_activity_entrada">EntradaActivity</string>
+    <string name="title_activity_plato">PlatoActivity</string>
+    <string name="title_activity_postre">PostreActivity</string>
+    <string name="title_activity_bebestible">BebestibleActivity</string>
+    <string name="title_activity_detalle">DetalleActivity</string>
 
 </resources>
