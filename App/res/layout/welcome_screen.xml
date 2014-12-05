@@ -12,7 +12,7 @@
         android:id="@+id/logoff"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
+        android:layout_alignRight="@+id/total"
         android:layout_centerVertical="true"
         android:text="Volver" />
 
@@ -20,14 +20,14 @@
         android:id="@+id/usr_name"
         android:layout_width="139dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignBottom="@+id/total"
         android:layout_alignParentRight="true"
         android:gravity="center"
         android:textColor="#FF4000"
         android:textSize="22dip" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/total"
         android:layout_width="178dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/logoff"

@@ -12,5 +12,8 @@
     <string name="title_activity_postre">PostreActivity</string>
     <string name="title_activity_bebestible">BebestibleActivity</string>
     <string name="title_activity_detalle">DetalleActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_lista_mesas">ListamesasActivity</string>
+    <string name="title_activity_mesas">ActivityMesasActivity</string>
 
 </resources>
